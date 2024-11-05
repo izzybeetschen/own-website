@@ -19,7 +19,7 @@ h1 {
 .backwrap {
     background: #4B613E;
     /* Old browsers */
-    background-image: url("Images/background-image.png");
+    background-image: url("./Images/background-image.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -151,7 +151,7 @@ body {
     padding-bottom: 40px;
   }
 
-  .Java, .HTML, .CSS, .python, .SQL, .Assembly, .git, .maven {
+  .Java, .HTML, .CSS, .python, .SQL, .Assembly, .git, .maven, .c-code, .django, .javascript {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
