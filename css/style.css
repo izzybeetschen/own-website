@@ -176,11 +176,13 @@ body {
     font-weight: 700;
     font-style: bold;
     letter-spacing: 0.03em;
+    margin: 0;
   }
   
   .Lang-Logo {
     height: 70px;
     width: 70px;
+    padding-top: 10px;
   }
 
   .language-text {
@@ -200,6 +202,18 @@ body {
     border-bottom-width: 3px;
   }
 
+  .project-left {
+    width: 45%;
+    display: inline-block;
+    padding-right: 5%;
+  }
+
+  .project-right {
+    width: 45%;
+    display: inline-block;
+    padding-left: 5%
+  }
+
   .project-title {
     color: #4B613E;
     font-size: 25px;
@@ -215,11 +229,15 @@ body {
     font-family: "futura-pt", sans-serif;
     font-weight: 400;
     font-style: normal;
-    width: 50%;
   }
 
   .project-image {
+    width: 100%;
+    padding-bottom: 40px
+  }
 
+  .project-links {
+    width: 10%;
   }
 
 
