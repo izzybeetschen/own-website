@@ -237,6 +237,18 @@ body {
   .project-links {
     width: 10%;
   }
+  
+  a:link, a:visited {
+    color: #4B613E;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  a:active {
+    color: #B0B0AB;
+  }
 
 
   @media only screen and (max-width: 250px) {
