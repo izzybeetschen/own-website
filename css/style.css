@@ -12,7 +12,6 @@ p {
   font-style: normal;
 }
 
-
 h1 {
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
@@ -35,10 +34,11 @@ a:active {
 .intro-body {
     display: inline-block;
     height: 80vh;
+    width: 100%;
 }
 
 .intro-words{
-  z-index: 20;
+  z-index: 20;    /* stack order */
   color: white;
   font-size: 30px;
   width: 40%;
@@ -147,6 +147,8 @@ a:active {
   font-style: normal;
   font-size: 54px;
 }
+
+
 
 /* @media only screen and (max-width: 250px) {
   .intro-words {
