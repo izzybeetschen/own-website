@@ -52,10 +52,10 @@ a:active {
 .languages {
   height: auto;
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   padding-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .lang {
@@ -75,11 +75,17 @@ a:active {
   font-style: bold;
   letter-spacing: 0.03em;
   margin: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
+
+.all-lang {
+  padding-top: 30px;
 }
 
 .Lang-Logo {
   height: 70px;
-  width: 70px;
+  width: auto;
   padding-top: 10px;
 }
 
@@ -92,10 +98,10 @@ a:active {
 
 .project-over {
   color: #4B613E;
-  border-top-style: solid;
+  border-bottom-style: solid;
   margin-left: 20%;
   margin-right: 20%;
-  border-top-width: 3px;
+  border-bottom-width: 3px;
 }
 
 .project-left {
@@ -146,6 +152,11 @@ a:active {
   font-weight: 700;
   font-style: normal;
   font-size: 54px;
+}
+
+#proj-title {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 
