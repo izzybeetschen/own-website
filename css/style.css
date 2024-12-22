@@ -91,7 +91,7 @@ a:active {
 
 .language-text {
   color: #4B613E;;
-  font-size: 22px;
+  font-size: 1vw;
   text-align: center;
   font-weight: bold;
 } 
@@ -146,12 +146,11 @@ a:active {
   z-index: 20;
   color: white;
   width: 100%;
-  font-size: 45px;
+  font-size: 3vw;
   line-height: 150%;
   font-family: "rustica", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 54px;
 }
 
 #proj-title {
@@ -159,7 +158,11 @@ a:active {
   margin-right: 20%;
 }
 
-
+/* @media only screen and (max-width: 700px) {
+  .intro-words {
+    font-size: 20px;
+  }
+} */
 
 /* @media only screen and (max-width: 250px) {
   .intro-words {
@@ -325,3 +328,14 @@ opacity: 0.5;
     -webkit-transform: translateY(0%);
   }
 } 
+
+
+@media only screen and (max-width: 1000px) {
+  .intro-words {
+    font-size: 1.5vw;
+  }
+
+  .intro-body, .backwrap {
+    height: 250px;
+  }
+}
