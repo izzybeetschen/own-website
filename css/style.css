@@ -91,7 +91,7 @@ a:active {
 
 .language-text {
   color: #4B613E;;
-  font-size: 1vw;
+  font-size: 1.2vw;
   text-align: center;
   font-weight: bold;
 } 
@@ -108,6 +108,7 @@ a:active {
   width: 45%;
   display: inline-block;
   padding-right: 5%;
+  text-align: center;
 }
 
 .project-right {
@@ -130,7 +131,6 @@ a:active {
   color: #4B613E;
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
 .project-image {
