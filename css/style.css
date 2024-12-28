@@ -109,12 +109,14 @@ a:active {
   display: inline-block;
   padding-right: 5%;
   text-align: center;
+  height: 100%;
 }
 
 .project-right {
   width: 45%;
   display: inline-block;
-  padding-left: 5%
+  padding-left: 5%;
+  height: 100%
 }
 
 .project-title {
@@ -140,6 +142,8 @@ a:active {
 
 .project-links {
   width: 10%;
+  height: 40px;
+  width: auto;
 }
 
 #Hi {
@@ -160,6 +164,12 @@ a:active {
 
 /* Extra small devices (phones, 251px to 450px) */
 @media only screen and (max-width: 450px) {
+  .project-left, .project-right {
+    display: block;
+    width: 100%;
+    padding: 0%;
+  }
+
   #Hi {
     font-size: 15px;
   }
@@ -185,6 +195,12 @@ a:active {
 
 /* Small devices (portrait tablets and large phones, 451px to 600px) */
 @media only screen and (min-width: 451px) and (max-width: 600px) {
+  .project-left, .project-right {
+    display: block;
+    width: 100%;
+    padding: 0%;
+  }
+
   #Hi {
     font-size: 20px;
   }
@@ -213,6 +229,7 @@ a:active {
 @media only screen and (min-width: 601px) and (max-width: 800px) {
   .project-left, .project-right {
     display: block;
+    padding: 0%;
     width: 100%;
   }
 
