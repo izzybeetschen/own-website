@@ -158,82 +158,86 @@ a:active {
   margin-right: 20%;
 }
 
-@media only screen and (max-width: 800px) {
+/* Extra small devices (phones, 251px to 450px) */
+@media only screen and (max-width: 450px) {
+  #Hi {
+    font-size: 15px;
+  }
+
+  #who-I-am {
+    font-size: 10px;
+    line-height: 120%
+  }
+
+  .Lang-Logo {
+    height: 40px;
+    width: auto;
+    padding-top: 8px;
+  }
+  
+  .language-text {
+    color: #4B613E;;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+  } 
+}
+
+/* Small devices (portrait tablets and large phones, 451px to 600px) */
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+  #Hi {
+    font-size: 20px;
+  }
+
+  #who-I-am {
+    font-size: 13px;
+    line-height: 120%
+  }
+  
+  .Lang-Logo {
+    height: 60px;
+    width: auto;
+    padding-top: 10px;
+  }
+  
+  .language-text {
+    color: #4B613E;;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+  } 
+
+}
+
+/* Medium devices (landscape tablets, 601px to 800px) */
+@media only screen and (min-width: 601px) and (max-width: 800px) {
   .project-left, .project-right {
     display: block;
     width: 100%;
   }
-}
-/* @media only screen and (max-width: 700px) {
-  .intro-words {
-    font-size: 20px;
-  }
-} */
 
-/* @media only screen and (max-width: 250px) {
-  .intro-words {
-    width: 100%;
-    line-height: 110%;
-    padding-top: 40%;
-  }
   #Hi {
-    font-size: 20px;
+    font-size: 25px;
   }
+
   #who-I-am {
     font-size: 15px;
   }
-  .languages {
-    width: 100%;
+
+  .Lang-Logo {
+    height: 65px;
+    width: auto;
+    padding-top: 10px;
   }
+  
+  .language-text {
+    color: #4B613E;;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  } 
+
 }
-
-/* Extra small devices (phones, 251px to 450px) */
-/* @media only screen and (min-width: 251px) and (max-width: 450px) {
-  .intro-words {
-    width: 100%;
-    line-height: 110%;
-    padding-top: 35%;
-  }
-  #Hi {
-    font-size: 30px;
-  }
-  #who-I-am {
-    font-size: 25px;
-  }
-  .languages {
-    width: 100%;
-  }
-} */
-
-/* Small devices (portrait tablets and large phones, 451px to 600px) */
-/* @media only screen and (min-width: 451px) and (max-width: 600px) {
-  .intro-words {
-    width: 80%;
-    line-height: 125%;
-    padding-top: 10%;
-  }
-  .languages {
-    width: 90%;
-  }
-} */
-
-/* Medium devices (landscape tablets, 601px to 768px) */
-/* @media only screen and (min-width: 601px) and (max-width: 800px) {
-  .intro-words {
-    width: 60%;
-    line-height: 125%;
-    padding-top: 10%;
-  }
-  #Hi {
-    font-size: 40px;
-  }
-  #who-I-am {
-    font-size: 28px;
-  }
-  .languages {
-    width: 90%;
-  }
-} */
 
 /* shapes */
 .backwrap {
