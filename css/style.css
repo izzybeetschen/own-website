@@ -158,6 +158,12 @@ a:active {
   margin-right: 20%;
 }
 
+@media only screen and (max-width: 800px) {
+  .project-left, .project-right {
+    display: block;
+    width: 100%;
+  }
+}
 /* @media only screen and (max-width: 700px) {
   .intro-words {
     font-size: 20px;
