@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Izzy Beetschen</title>
-    <link href="css/output.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Header info -->
-    <div class="relative w-full h-screen overflow-hidden">
-        <!-- Temp video -->
-        <video class="absolute top-0 left-0 w-full h-full object-cover drop-shadow-2xl" autoplay loop muted playsinline>
-            <source src="/Videos/background-vid-2.mp4" type="video/mp4">
-        </video>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Izzy Beetschen</title>
+        <link href="css/output.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header info -->
+        <div class="relative w-full h-screen overflow-hidden">
+            <!-- Temp video -->
+            <video class="absolute top-0 left-0 w-full h-full object-cover drop-shadow-2xl" autoplay loop muted playsinline>
+                <source src="/Videos/background-vid-2.mp4" type="video/mp4">
+            </video>
 
-        <!-- Profile pic -->
-        <div class="absolute inset-0 flex items-start justify-center">
-            <img src="/Images/main_image.jpg" alt="Profile" class="w-64 h-64 rounded-full border-4 border-white shadow-lg object-cover mt-24">
+            <!-- Tint -->
+            <div class="absolute z-10 inset-0 bg-black/20"></div>
+
+            <!-- Profile pic -->
+            <div class="absolute inset-0 z-20 flex items-start justify-center">
+                <img src="/Images/main_image.jpg" alt="Profile" class="w-64 h-64 rounded-full border-4 border-white shadow-lg object-cover mt-24">
+            </div>
+
+            <!-- Text -->
+            <div class="absolute inset-0 z-20 flex flex-col items-center justify-end pb-32">
+                <h1 class="text-white text-4xl font-bold drop-shadow-lg text-center">Hi I'm Izzy!</h1>
+                <p class="text-white text-xl font-bold drop-shadow-lg text-center mt-4">I'm a final year computer science student at the University of Aberdeen</p>
+            </div>
         </div>
 
-        <!-- Text -->
-        <div class="absolute inset-0 flex flex-col items-center justify-end pb-32">
-            <h1 class="text-white text-4xl font-bold drop-shadow-lg text-center">Hi I'm Izzy!</h1>
-            <p class="text-white text-xl font-bold drop-shadow-lg text-center mt-4">I'm a final year computer science student at the University of Aberdeen</p>
+        <!-- Projects -->
+        <h1 class="w-2/3 mx-auto pt-15 text-3xl font-bold text-center border-b-3 border-[#1f79c7] ">Projects</h1>
+        <div class="w-3/4 mx-auto grid grid-cols-2 gap-8 ">
+            <!-- ApeScrape -->
+            <div class="relative bg-base-200 mt-10 text-center rounded-xl shadow-md">
+                <div class="absolute inset-0 bg-black/60"></div>
+                <img src="Images/apescrape.png" class="w-full">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                    <h2 class="text-white relative z-10 text-4xl font-bold text-center">ApeScrape</h2>
+                </div>
+            </div>
+
+            <!-- Website -->
+            <div class="relative bg-base-200 mt-10 text-center rounded-xl shadow-md">
+                <div class="absolute inset-0 bg-black/60"></div>
+                <img src="Images/this.png" class="w-full">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                    <h2 class="text-white relative z-10 text-4xl font-bold text-center">This Website</h2>
+                </div>
+            </div>
+
+            <!-- Self Employed -->
+            <div class="relative bg-base-200text-center rounded-xl shadow-md">
+                <div class="absolute inset-0 bg-black/60"></div>
+                <img src="Images/websites.png" class="w-full">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                    <h2 class="text-white relative z-10 text-4xl font-bold text-center">Self Employed Web Development</h2>
+                </div>
+            </div>
+
+            <!-- DocSplit -->
+            <div class="relative bg-base-200 text-center rounded-xl shadow-md">
+                <div class="absolute inset-0 bg-black/60"></div>
+                <img src="Images/DocSplit.png" class="w-full">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                    <h2 class="text-white relative z-10 text-4xl font-bold text-center">DocSplit</h2>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <!-- Projects -->
-    <div class="w-3/4 mx-auto grid grid-cols-2 gap-8 ">
-        <div class="bg-base-200 p-8 mt-20 text-center rounded-xl shadow-md">
-            
-        </div>
-        <div class="bg-base-200 p-8 mt-20 text-center rounded-xl shadow-md">Box 2</div>
-        <div class="bg-base-200 p-8 text-center rounded-xl shadow-md">Box 3</div>
-        <div class="bg-base-200 p-8 text-center rounded-xl shadow-md">Box 4</div>
-    </div>
-
-
-
-
-</body>
+    </body>
 </html>
