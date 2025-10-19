@@ -13,9 +13,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -31,20 +28,22 @@ jobs:
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./css/input.css -o ./css/output.css --minify
 
-      - name: List files (debug)
-        run: ls -R
-
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            index.html
-            css/output.css
-            Images
-            Videos
+          path: index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: css/output.css
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: Images
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: Videos
 
       - name: Deploy to GitHub Pages
         id: deployment
