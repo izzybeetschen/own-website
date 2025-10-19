@@ -17,7 +17,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -30,7 +31,10 @@ jobs:
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./css/input.css -o ./css/output.css --minify
 
-      - name: Setup Pages
+      - name: Debug - list files
+        run: ls -R
+
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
