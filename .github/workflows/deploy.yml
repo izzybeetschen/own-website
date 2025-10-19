@@ -36,8 +36,8 @@ jobs:
           path: |
             index.html
             css/output.css
-            Images/**
-            Videos/**
+            Images/**/*
+            Videos/**/*
 
       - name: Deploy to GitHub Pages
         id: deployment
