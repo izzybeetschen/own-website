@@ -33,11 +33,11 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            index.html
-            css/output.css
-            Images/**/*
-            Videos/**/*
+          path:
+            - index.html
+            - css/output.css
+            - Images
+            - Videos
 
       - name: Deploy to GitHub Pages
         id: deployment
