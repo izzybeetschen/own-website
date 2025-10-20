@@ -33,7 +33,11 @@
         <h1 class="w-2/3 mx-auto pt-15 text-3xl font-bold text-center border-b-3 border-[#1f79c7] ">Projects</h1>
         <div class="w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- ApeScrape -->
-            <div class="relative bg-base-200 mt-7.5 text-center rounded-xl shadow-md cursor-pointer">
+            <div class="card relative bg-base-200 mt-7.5 text-center rounded-xl shadow-md cursor-pointer" 
+            data-title="ApeScrape" data-img="Images/apescrape.png" 
+            data-content="ApeScrape is an AI powered web scraping tool designed to allow users to collect data from any website quickly and easily. This was built as a 
+            team project at the University of Aberdeen for a Software Engineering Course, but development has continued past the course deadline. ApeScrape won the Grow Prize
+            for best idea at the Intelligent Plant Inform Prize 2025 in Aberdeen, and was a finallist for Best Business Idea at the Lightbulb Ideas Competition 2025 at the University of Aberdeen.">
                 <div class="absolute inset-0 bg-black/60"></div>
                 <img src="Images/apescrape.png" class="w-full">
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
@@ -42,7 +46,8 @@
             </div>
 
             <!-- Website -->
-            <div class="relative bg-base-200 md:mt-7.5 text-center rounded-xl shadow-md cursor-pointer">
+            <div class="card relative bg-base-200 md:mt-7.5 text-center rounded-xl shadow-md cursor-pointer"
+            data-title="This Website" data-img="Images/this.png" data-content="TBC">
                 <div class="absolute inset-0 bg-black/60"></div>
                 <img src="Images/this.png" class="w-full">
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
@@ -51,7 +56,8 @@
             </div>
 
             <!-- Self Employed -->
-            <div class="relative bg-base-200text-center rounded-xl shadow-md cursor-pointer">
+            <div class="card relative bg-base-200 text-center rounded-xl shadow-md cursor-pointer"
+            data-title="Self Employed Web Developer" data-img="Images/websites.png" data-content="TBC">
                 <div class="absolute inset-0 bg-black/60"></div>
                 <img src="Images/websites.png" class="w-full">
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
@@ -60,7 +66,8 @@
             </div>
 
             <!-- DocSplit -->
-            <div class="relative bg-base-200 text-center rounded-xl shadow-md cursor-pointer">
+            <div class="card relative bg-base-200 text-center rounded-xl shadow-md cursor-pointer"
+            data-title="DocSplit" data-img="Images/DocSplit.png" data-content="TBC">
                 <div class="absolute inset-0 bg-black/60"></div>
                 <img src="Images/DocSplit.png" class="w-full">
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
@@ -69,5 +76,36 @@
             </div>
         </div>
 
+        <!-- Modal popup -->
+        <div id="modal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-30">
+            <div class="bg-white p-6 rounded-lg w-3/4 max-w-3xl relative">
+                <h2 id="modalTitle" class="text-xl font-bold mb-4 text-center"></h2>
+                <img id="modalImg" class="w-full mb-4 rounded" alt="">
+                <p id="modalText" class="mb-4"></p>
+                <button id="closeModal" class="px-4 py-2 bg-red-500 text-white rounded cursor-pointer">Close</button>
+            </div>
+        </div>
+
+        <script>
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalImg = document.getElementById('modalImg');
+            const modalText = document.getElementById('modalText');
+            const closeModal = document.getElementById('closeModal');
+
+            document.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('click', () => {
+                    modalTitle.textContent = card.dataset.title;
+                    modalImg.src = card.dataset.img;
+                    modalText.textContent = card.dataset.content;
+                    modal.classList.remove('hidden');
+                });
+            });
+
+            closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+            modal.addEventListener('click', e => {
+                if (e.target === modal) modal.classList.add('hidden');
+            });
+        </script>
     </body>
 </html>
